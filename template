@@ -1,3 +1,14 @@
 #!/bin/bash
 echo -e "Starting...: "
-read -r -p "Please provide filename:"
+read -r -p "Please provide filename:" file
+filepath=`pwd`'/scripts/'$file.sh
+echo $filepath
+touch $filepath
+
+echo '#Description:' >> $filepath
+echo '#Version:' >> $filepath
+echo "#Creation date: `date`" >> $filepath
+echo '#Author:' >> $filepath
+echo -e "\n#START\n" >> $filepath
+echo '#!/bin/bash' >> $filepath
+echo -e "\n\n\n#END" >> $filepath
