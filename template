@@ -1,0 +1,3 @@
+#!/bin/bash
+echo -e "Starting...: "
+read -r -p "Please provide filename:"
